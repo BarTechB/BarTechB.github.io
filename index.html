@@ -1,20 +1,23 @@
-<html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Get the Value of Text Input Field in JavaScript</title>
+</head>
 <body>
- <h1>Question 1: how much is 8 x 4?</h1>
-<br><input type="text"> <br>
-<button onclick="question1()">Check if your answer is correct?</button> 
- 
-  <script>
- function question1() {
-  if (value == 32) {
-     window.alert("Correct!");
-   } else {
-      window.alert("Try again")
-   }
-}
-  </script>
- 
- </body>
- </html> 
-
-
+    <input type="text" placeholder="Type something..." id="myInput">
+    <button type="button" onclick="getInputValue();">Get Value</button>
+    
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+            
+            // Displaying the value
+          	if (inputVal == "test") {
+            alert("Gratuluje");
+            }
+        }
+    </script>
+</body>
+</html>
