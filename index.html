@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <h1> Witam! Wpisz haslo:
 <meta charset="utf-8">
-<title>Get the Value of Text Input Field in JavaScript</title>
+<title>Wpisz haslo:</title>
 </head>
 <body>
-    <input type="text" placeholder="Type something..." id="myInput">
+    <input type="text" placeholder="Twoje haslo..." id="myInput">
     <button type="button" onclick="getInputValue();">Get Value</button>
     
     <script>
@@ -14,8 +15,11 @@
             var inputVal = document.getElementById("myInput").value;
             
             // Displaying the value
-          	if (inputVal == "test") {
-            alert("Gratuluje");
+          	if (inputVal == "Japonia") {
+            alert("Gratuluje, odgadlasz haslo! Nagrode znajdziesz w miejscu gdzie swiatlo ledwo dociera i na sama mysl o tym miejscu przechodzi ci przerarzenie.");
+            }
+            if (inputVal == "japonia") {
+            alert("Gratuluje, odgadlasz haslo! Nagrode znajdziesz w miejscu gdzie swiatlo ledwo dociera i na sama mysl o tym miejscu przechodzi ci przerarzenie.");
             }
         }
     </script>
